@@ -24,10 +24,10 @@ class ViewController: UIViewController, NFCNDEFReaderSessionDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func scanPressed(_ sender: Any) {
-        nfcSession = NFCNDEFReaderSession.init(delegate: self, queue: nil, invalidateAfterFirstRead: true)
-        nfcSession?.begin()
-    }
+//    @IBAction func scanPressed(_ sender: Any) {
+//        nfcSession = NFCNDEFReaderSession.init(delegate: self, queue: nil, invalidateAfterFirstRead: true)
+//        nfcSession?.begin()
+//    }
     
     func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
         print("The session was invalidated: \(error)")
